@@ -32,7 +32,14 @@ public class main {
        */
         CardSet cs1=new CardSet(Black);
         CardSet cs2=new CardSet(White);
-        System.out.println(cs1.compareTo(cs2));
+         if (cs1.compareTo(cs2)==1){
+            System.out.println("Black wins");
+        }
+        else if (cs1.compareTo(cs2)==-1){
+            System.out.println("White wins");
+        }
+        else
+            System.out.println("Tie");
 
     }
 }
