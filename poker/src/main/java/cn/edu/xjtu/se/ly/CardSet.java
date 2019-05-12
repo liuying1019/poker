@@ -95,14 +95,8 @@ public class CardSet implements Comparable {
                return 1;
            } else return -1;
        }
-           else {
-              for(int i=0;i<5;i++){
-                   if(this.cards[i].getRank().getR()>((CardSet) o).cards[i].getRank().getR()){
-                            return 1;
-                   }
-                   else if(this.cards[i].getRank().getR()<((CardSet) o).cards[i].getRank().getR()){
-                          return -1;
-                   }
+        else {
+           return this.comparehigh(o);
                }
 
 
